@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MediUp - Home</title>
+  <style>
+    /* Reset default */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #cceeff; /* ocean light blue */
+      color: #04545a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #04675c;
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .heading {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .top-right {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    .top-right a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .button-group button {
+      padding: 16px 32px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      background-color: #13a068;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      min-width: 150px;
+    }
+
+    .button-group button:hover {
+      background-color: #00c7a9;
+    }
+
+    .about {
+      padding: 20px 30px;
+      background-color: #e0f7ff;
+      text-align: left;
+      font-size: 16px;
+    }
+
+    .about a {
+      color: #005f73;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .button-group {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .top-right {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="heading">MediUp</div>
+    <div class="top-right">
+      <div>Language</div>
+      <a href="#">Login</a>
+    </div>
+  </header>
+
+  <!-- Main Buttons -->
+  <main>
+    <h2>Welcome to MediUp</h2>
+    <p>Your Healthcare Access Platform</p>
+    <div class="button-group">
+      <button>AI</button>
+      <button>Doctor</button>
+      <button>Prescription</button>
+    </div>
+  </main>
+
+  <!-- About Section -->
+ <div class="about">
+  <h3>About MediUp</h3>
+  <p>
+    MediUp is a platform that helps people in rural areas access healthcare easily. It connects users with doctors, provides AI-based health support, and manages digital prescriptions — all in one place and in local languages.
+  </p>
+  <p>
+    Our goal is to make healthcare simple, quick, and available to everyone, no matter where they live.
+  </p>
+</div>
+</body>
+</html>
